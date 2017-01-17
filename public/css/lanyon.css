@@ -41,7 +41,8 @@ body {
 }
 
 html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  text-align:  justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -62,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrap {
   position: relative;
-  width: 100%;
+  width:    100%;
 }
 
 
@@ -152,8 +153,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
-  -webkit-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
 }
 @media (min-width: 30em) {
   .sidebar {
@@ -174,6 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Sidebar nav */
+/* "separation bars" between the navigation items */
 .sidebar-nav {
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
@@ -182,6 +184,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: .5rem 1rem;
   border-top: 1px solid rgba(255,255,255,.1);
 }
+/* navigation item "blocks" */
 .sidebar-nav-item.active,
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
@@ -284,8 +287,8 @@ a.sidebar-nav-item:focus {
 }
 .wrap,
 .sidebar-toggle {
-  -webkit-transition: -webkit-transform .3s ease-in-out;
-          transition: transform .3s ease-in-out;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+          transition: transform .2s ease-in-out;
 }
 
 #sidebar-checkbox:checked + .sidebar {

@@ -1,7 +1,3 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
 
 # Setup
 title:               Lanyon
@@ -14,9 +10,26 @@ gems:                [jekyll-paginate]
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Mohamed-Yassine MADDOURI
+  url:               https://linkedin.com/in/madduri
+  email:             m.y.maddouri@gmail.com
 
 # Custom vars
 version:             1.0.0
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  # support "```" code blocks
+  input: GFM
+  # disable smart quotes
+  # https://stackoverflow.com/a/25597026/865719
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
+# https://jekyllrb.com/docs/configuration/
+incremental: false
+
+# https://stackoverflow.com/a/10589056/865719
+permalink: /posts/:title
+#permalink: /posts/:slug
